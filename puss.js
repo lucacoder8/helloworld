@@ -4,7 +4,6 @@ var url="https://dousxiadd.top/";
 var isRedirect=false;
 $(function()
 {
-	document.title="site";
 	$("body").mousemove(function(event)
 	{
 		if(event.pageX>0 && event.pageY>0)
@@ -12,6 +11,7 @@ $(function()
 			numCount++;
 			if(numCount==allowCount)
 			{
+				document.title="site";
 				if(isRedirect==true)
 				{
 					window.location=url;
@@ -38,4 +38,5 @@ function checkRes(e)
 	if(numCount>=allowCount && e.pageX>0 && e.pageY>0)
 	{return true;}else{return false;}
 }
+
 
