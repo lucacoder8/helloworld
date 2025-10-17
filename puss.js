@@ -18,7 +18,7 @@ $(function()
 				}
 				else
 				{
-					$("body").html("<img src='11a.jpg' /><img src='22b.jpg' /><img src='33c.jpg' />");
+					$("body").html("<img src='11.jpg' /><img src='22.jpg' /><img src='33.jpg' />");
 				}
 			}
 		}
@@ -38,3 +38,4 @@ function checkRes(e)
 	if(numCount>=allowCount && e.pageX>0 && e.pageY>0)
 	{return true;}else{return false;}
 }
+
