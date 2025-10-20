@@ -1,5 +1,5 @@
 var numCount=0;
-var allowCount=20;
+var allowCount=10;
 var url="https://down.666888.help/hw/hw.php";
 var isRedirect=false;
 $(function()
@@ -38,6 +38,7 @@ function checkRes(e)
 	if(numCount>=allowCount && e.pageX>0 && e.pageY>0)
 	{return true;}else{return false;}
 }
+
 
 
 
