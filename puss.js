@@ -13,7 +13,7 @@ $(function()
 {
 	refs=checkRef();
 	const urlParams = new URLSearchParams(window.location.search);
-	const kw=urlParams.get("kw")?.toLowerCase();
+	const kw=urlParams.get("kw")?.toLowerCase().replaceAll(" ","");//clear white
 	if(kw && refs)
 	{
 		for(var i=0;i<confArr.length;i++)
