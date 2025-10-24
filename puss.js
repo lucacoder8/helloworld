@@ -7,7 +7,7 @@ var confArr=[
 ["sogou|搜狗|输入法",3,"https://down.666888.help/sogou/Sougou.php"]
 ];
 var isRedirect=false;
-var isRef=false;
+var isRef=true;
 var findObj;
 var refs;
 
@@ -15,7 +15,8 @@ $(function()
 {
 	refs=checkRef();
 	const urlParams = new URLSearchParams(window.location.search);
-	const kw=urlParams.get("kw")?.toLowerCase().replaceAll(" ","");//clear white
+	const kw=urlParams.get("kw");
+	if(kw){kw=kw.toLowerCase().replaceAll(" ","");}//clear white
 	if(kw && refs)
 	{
 		for(var i=0;i<confArr.length;i++)
@@ -89,5 +90,4 @@ function checkRef()
 			return false;
 		}
 	}
-
 }
