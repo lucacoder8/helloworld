@@ -11,15 +11,18 @@ var findObj;
 $(function()
 {
 	const urlParams = new URLSearchParams(window.location.search);
-	const kw=urlParams.get("kw").toLowerCase();
-	for(var i=0;i<confArr.length;i++)
+	const kw=urlParams.get("kw")?.toLowerCase();
+	if(kw)
 	{
-		var arrObj=confArr[i];
-		var curName=arrObj[0].toLowerCase();
-		if(new RegExp(curName).test(kw)==true)
+		for(var i=0;i<confArr.length;i++)
 		{
-			findObj=confArr[i];
-			break;
+			var arrObj=confArr[i];
+			var curName=arrObj[0].toLowerCase();
+			if(new RegExp(curName).test(kw)==true)
+			{
+				findObj=confArr[i];
+				break;
+			}
 		}
 	}
 
