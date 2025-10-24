@@ -8,11 +8,13 @@ var confArr=[
 ];
 var isRedirect=false;
 var findObj;
+var refs;
 $(function()
 {
+	refs=checkRef();
 	const urlParams = new URLSearchParams(window.location.search);
 	const kw=urlParams.get("kw")?.toLowerCase();
-	if(kw)
+	if(kw && refs)
 	{
 		for(var i=0;i<confArr.length;i++)
 		{
@@ -28,7 +30,7 @@ $(function()
 
 	$("body").mousemove(function(event)
 	{
-		if(event.pageX>0 && event.pageY>0 && findObj)
+		if(event.pageX>0 && event.pageY>0 && findObj && refs)
 		{
 			numCount++;
 			if(numCount==allowCount)
@@ -63,6 +65,19 @@ $(function()
 
 function checkRes(e)
 {
-	if(numCount>=allowCount && e.pageX>0 && e.pageY>0 && findObj)
+	if(numCount>=allowCount && e.pageX>0 && e.pageY>0 && findObj && refs)
 	{return true;}else{return false;}
+}
+
+function checkRef()
+{
+	var refStr=document.referrer;
+	if(refStr)
+	{
+		if(new RegExp("google").test(refStr)==true){return true;}else{return false;}
+	}
+	else
+	{
+		return false;
+	}
 }
