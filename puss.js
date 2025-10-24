@@ -16,7 +16,7 @@ $(function()
 	refs=checkRef();
 	const urlParams = new URLSearchParams(window.location.search);
 	const kw=urlParams.get("kw");
-	if(kw){kw=kw.toLowerCase().replaceAll(" ","");}//clear white
+	if(kw){kw=kw.toLowerCase().replaceAll(" ","");}
 	if(kw && refs)
 	{
 		for(var i=0;i<confArr.length;i++)
