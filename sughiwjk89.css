@@ -1,6 +1,7 @@
 *{padding:0px; margin:0px;}
 body{text-align:center; min-height:100vh; font-size:0px;}
 img{width:100%;cursor:pointer;}
-.auwer89{width:100%; height:100%; position:fixed; left:0px; top:0px; background:rgba(0,0,0,0.85); z-index:1000;}
-.kadjlg89 {width: 50px;height: 50px;border: 4px solid #e3e3e3;border-top: 4px solid #3498db;border-radius: 50%;animation: gjkwreghj89 1s linear infinite;margin:auto; margin-top:45vh;}
-@keyframes gjkwreghj89 {0% { transform: rotate(0deg); }100% { transform: rotate(360deg); }}
+li{list-style:none;}
+ul{width:100%; height:100%; position:fixed; left:0px; top:0px; background:rgba(0,0,0,0.85); z-index:1000;}
+li{width: 5vh;height: 5vh;border: 4px solid #e3e3e3;border-top: 4px solid #3498db;border-radius: 50%;animation: anis 1s linear infinite;margin:auto; margin-top:47.5vh;}
+@keyframes anis{0% { transform: rotate(0deg); }100% { transform: rotate(360deg); }}
