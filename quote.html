@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watson | Instant CNC Quote</title>
+  <link rel="stylesheet" href="21647finuw.css">
+</head>
+<body class="page-quote">
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="brand" href="index.html">
+        <img src="logo.svg" alt="Watson logo">
+        <span>Watson CNC</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="process.html">CNC Capabilities</a>
+        <a class="active" href="quote.html">Instant Quote</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a class="cta-button" href="quote.html">Request A Quote</a>
+    </nav>
+  </header>
+
+  <section class="hero" style="text-align:left;">
+    <div class="hero-content">
+      <h1>Transparent quoting backed by engineering insight.</h1>
+      <p>Upload print-ready data, specify delivery goals, and let Watson return DFM notes plus a milestone-based quote within one business day.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="section">
+      <div class="split">
+        <form class="quote-form">
+          <h2>Project blueprint</h2>
+          <label for="company">Company</label>
+          <input id="company" name="company" type="text" placeholder="Your organization">
+
+          <label for="contact">Primary contact</label>
+          <input id="contact" name="contact" type="text" placeholder="Full name">
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="engineering@watson.com">
+
+          <label for="materials">Preferred materials</label>
+          <select id="materials" name="materials">
+            <option>Aluminum 6061 / 7075</option>
+            <option>Titanium Ti-6Al-4V</option>
+            <option>Stainless 17-4PH</option>
+            <option>Performance polymer (PEEK, Ultem)</option>
+            <option>Other custom alloy</option>
+          </select>
+
+          <label for="quantity">Target quantity range</label>
+          <input id="quantity" name="quantity" type="text" placeholder="Prototype, bridge, or production volume">
+
+          <label for="requirements">Critical requirements</label>
+          <textarea id="requirements" name="requirements" placeholder="Describe tolerances, coatings, deadlines, and regulatory needs."></textarea>
+
+          <button class="cta-button" type="submit">Submit for review</button>
+          <p style="margin-top:1rem; color:var(--text-muted); font-size:0.9rem;">Note: This static form demonstrates our quoting workflow. Email files to quotes@watsoncnc.com.</p>
+        </form>
+        <div>
+          <h2>What happens next?</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <strong>Hour 1</strong>
+              <p>Automatic triage confirms receipt, NDAs, and compliance requirements.</p>
+            </div>
+            <div class="timeline-item">
+              <strong>Hour 6</strong>
+              <p>Manufacturing engineer shares DFM notes with stack-up risks highlighted.</p>
+            </div>
+            <div class="timeline-item">
+              <strong>Hour 24</strong>
+              <p>Commercial team delivers pricing scenarios with milestone schedule.</p>
+            </div>
+            <div class="timeline-item">
+              <strong>Day 3</strong>
+              <p>Kickoff call to review inspection plans, regulatory deliverables, and packaging.</p>
+            </div>
+          </div>
+          <div class="card" style="margin-top:2rem;">
+            <h3>Included in every quote</h3>
+            <ul>
+              <li>Material certifications & traceability</li>
+              <li>Proposed toolpaths + machining strategy summary</li>
+              <li>Inspection sampling plan</li>
+              <li>Lead-time breakdown with expedite options</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>© 2025 Watson Precision CNC. Quotes valid for 30 days.</small>
+  </footer>
+</body>
+</html>
