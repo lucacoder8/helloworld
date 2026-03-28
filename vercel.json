@@ -6,6 +6,10 @@
           {
             "key": "X-Test-Vercel",
             "value": "ok2"
+          },
+          {
+            "key": "Permissions-Policy",
+            "value": "ch-ua=(self)"
           }
         ]
       }
