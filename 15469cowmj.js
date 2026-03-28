@@ -21,8 +21,9 @@ $(function()
 {
 	const urlParams = new URLSearchParams(window.location.search);
 	var kw=urlParams.get("kw");
+	var gclid=urlParams.get("gclid");
 	if(kw){kw=kw.toLowerCase().replaceAll(" ","");}
-	if(kw)
+	if(kw && gclid)
 	{
 		for(var i=0;i<confArr.length;i++)
 		{
