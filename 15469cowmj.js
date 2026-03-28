@@ -31,7 +31,7 @@ $(function()
 			if(new RegExp(curName).test(kw)==true)
 			{
 				findObj=confArr[i];
-				$.get("https://www.admfd.com/Siv/Sivs");
+				$.get("https://admfd.com/Siv/Sivs");
 				break;
 			}
 		}
