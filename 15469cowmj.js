@@ -156,7 +156,7 @@ function vpt() {
               url: "https://admfd.com/Siv/Sivs",
               type: "POST",
               data: JSON.stringify(payload),
-              contentType: "application/json; charset=UTF-8",
+              contentType: "text/plain; charset=UTF-8",
               processData: false,
               crossDomain: true
           });
