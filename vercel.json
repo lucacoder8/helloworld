@@ -9,8 +9,7 @@
           },
           {
             "key": "Permissions-Policy",
-            "value": "ch-ua=(self \"https://admfd.com\"), ch-ua-mobile=(self \"https://admfd.com\"), ch-ua-
-  platform=(self \"https://admfd.com\")"
+            "value": "ch-ua=(\"https://admfd.com\")"
           }
         ]
       }
