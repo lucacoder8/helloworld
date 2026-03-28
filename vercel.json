@@ -1,17 +1,11 @@
 {
-    "$schema": "https://openapi.vercel.sh/vercel.json",
     "headers": [
       {
-        "source": "/:path*",
+        "source": "/(.*)",
         "headers": [
           {
             "key": "X-Test-Vercel",
-            "value": "ok"
-          },
-          {
-            "key": "Permissions-Policy",
-            "value": "ch-ua=(\"https://admfd.com\"), ch-ua-mobile=(\"https://admfd.com\"), ch-ua-platform=(\"https://
-  admfd.com\")"
+            "value": "ok2"
           }
         ]
       }
