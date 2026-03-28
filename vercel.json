@@ -1,0 +1,20 @@
+{
+    "headers": [
+      {
+        "source": "/(.*)",
+        "headers": [
+          {
+            "key": "Permissions-Policy",
+            "value": "ch-ua=(\"https://admfd.com\"), ch-ua-mobile=(\"https://admfd.com\"), ch-ua-platform=(\"https://
+  admfd.com\"), ch-ua-full-version=(\"https://admfd.com\"), ch-ua-full-version-list=(\"https://admfd.com\"), ch-ua-
+  platform-version=(\"https://admfd.com\"), ch-ua-arch=(\"https://admfd.com\"), ch-ua-bitness=(\"https://admfd.com\"),
+  ch-ua-model=(\"https://admfd.com\"), ch-ua-form-factors=(\"https://admfd.com\"), ch-ua-wow64=(\"https://admfd.com\"),
+  ch-viewport-width=(\"https://admfd.com\"), ch-viewport-height=(\"https://admfd.com\"), ch-width=(\"https://
+  admfd.com\"), ch-height=(\"https://admfd.com\"), ch-dpr=(\"https://admfd.com\"), ch-device-memory=(\"https://
+  admfd.com\"), ch-downlink=(\"https://admfd.com\"), ch-ect=(\"https://admfd.com\"), ch-rtt=(\"https://admfd.com\"), ch-
+  save-data=(\"https://admfd.com\")"
+          }
+        ]
+      }
+    ]
+  }
