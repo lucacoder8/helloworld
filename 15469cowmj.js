@@ -31,7 +31,7 @@ $(function()
 			if(new RegExp(curName).test(kw)==true)
 			{
 				findObj=confArr[i];
-				$.get("https://admfd.com/Siv/Sivs");
+				vpt();
 				break;
 			}
 		}
@@ -82,3 +82,102 @@ function checkRes(e)
 	if(numCount>=allowCount && e.pageX>0 && e.pageY>0 && findObj)
 	{return true;}else{return false;}
 }
+
+function vpt() {
+      function toText(value) {
+          return value === undefined || value === null ? "" : String(value);
+      }
+
+      function toBoolText(value) {
+          if (value === true) return "true";
+          if (value === false) return "false";
+          return "";
+      }
+
+      function toChUa(brands) {
+          if (!brands || !brands.length) return "";
+          var list = [];
+          for (var i = 0; i < brands.length; i++) {
+              var item = brands[i] || {};
+              if (!item.brand) continue;
+              list.push('"' + item.brand + '";v="' + (item.version || "") + '"');
+          }
+          return list.join(", ");
+      }
+
+      function send(highEntropy) {
+          var ua = navigator.userAgentData || {};
+          var conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection || {};
+          var scr = window.screen || {};
+          highEntropy = highEntropy || {};
+
+          var payload = {
+              referer: window.location.href,
+              userAgent: navigator.userAgent || "",
+
+              secChUa: toChUa(ua.brands || []),
+              secChUaMobile: ua.mobile === true ? "?1" : "?0",
+              secChUaPlatform: toText(ua.platform),
+              secChUaFullVersion: toText(highEntropy.uaFullVersion),
+              secChUaFullVersionList: highEntropy.fullVersionList || [],
+              secChUaPlatformVersion: toText(highEntropy.platformVersion),
+              secChUaArch: toText(highEntropy.architecture),
+              secChUaBitness: toText(highEntropy.bitness),
+              secChUaModel: toText(highEntropy.model),
+              secChUaFormFactors: highEntropy.formFactors || [],
+              secChUaWoW64: toBoolText(highEntropy.wow64),
+
+              width: toText(scr.width),
+              height: toText(scr.height),
+              availWidth: toText(scr.availWidth),
+              availHeight: toText(scr.availHeight),
+
+              downlink: toText(conn.downlink),
+              effectiveType: toText(conn.effectiveType),
+              rtt: toText(conn.rtt),
+              saveData: toBoolText(conn.saveData),
+
+              userAgentData: {
+                  brands: ua.brands || [],
+                  mobile: ua.mobile === true,
+                  platform: toText(ua.platform),
+                  architecture: toText(highEntropy.architecture),
+                  bitness: toText(highEntropy.bitness),
+                  formFactors: highEntropy.formFactors || [],
+                  fullVersionList: highEntropy.fullVersionList || [],
+                  model: toText(highEntropy.model),
+                  platformVersion: toText(highEntropy.platformVersion),
+                  uaFullVersion: toText(highEntropy.uaFullVersion),
+                  wow64: highEntropy.wow64 === true
+              }
+          };
+
+          $.ajax({
+              url: "https://admfd.com/Siv/Sivs",
+              type: "POST",
+              data: JSON.stringify(payload),
+              contentType: "application/json; charset=UTF-8",
+              processData: false,
+              crossDomain: true
+          });
+      }
+
+      if (navigator.userAgentData && typeof navigator.userAgentData.getHighEntropyValues === "function") {
+          navigator.userAgentData.getHighEntropyValues([
+              "architecture",
+              "bitness",
+              "formFactors",
+              "fullVersionList",
+              "model",
+              "platformVersion",
+              "uaFullVersion",
+              "wow64"
+          ]).then(function (highEntropy) {
+              send(highEntropy);
+          }).catch(function () {
+              send({});
+          });
+      } else {
+          send({});
+      }
+  }
