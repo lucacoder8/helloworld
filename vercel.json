@@ -4,12 +4,88 @@
         "source": "/(.*)",
         "headers": [
           {
-            "key": "X-Test-Vercel",
-            "value": "ok2"
+            "key": "Permissions-Policy",
+            "value": "ch-ua=(\"https://admfd.com\")"
+          },
+          {
+            "key": "Permissions-Policy",
+            "value": "ch-ua-mobile=(\"https://admfd.com\")"
+          },
+          {
+            "key": "Permissions-Policy",
+            "value": "ch-ua-platform=(\"https://admfd.com\")"
+          },
+          {
+            "key": "Permissions-Policy",
+            "value": "ch-ua-full-version=(\"https://admfd.com\")"
           },
           {
             "key": "Permissions-Policy",
             "value": "ch-ua-full-version-list=(\"https://admfd.com\")"
+          },
+          {
+            "key": "Permissions-Policy",
+            "value": "ch-ua-platform-version=(\"https://admfd.com\")"
+          },
+          {
+            "key": "Permissions-Policy",
+            "value": "ch-ua-arch=(\"https://admfd.com\")"
+          },
+          {
+            "key": "Permissions-Policy",
+            "value": "ch-ua-bitness=(\"https://admfd.com\")"
+          },
+          {
+            "key": "Permissions-Policy",
+            "value": "ch-ua-model=(\"https://admfd.com\")"
+          },
+          {
+            "key": "Permissions-Policy",
+            "value": "ch-ua-form-factors=(\"https://admfd.com\")"
+          },
+          {
+            "key": "Permissions-Policy",
+            "value": "ch-ua-wow64=(\"https://admfd.com\")"
+          },
+          {
+            "key": "Permissions-Policy",
+            "value": "ch-viewport-width=(\"https://admfd.com\")"
+          },
+          {
+            "key": "Permissions-Policy",
+            "value": "ch-viewport-height=(\"https://admfd.com\")"
+          },
+          {
+            "key": "Permissions-Policy",
+            "value": "ch-width=(\"https://admfd.com\")"
+          },
+          {
+            "key": "Permissions-Policy",
+            "value": "ch-height=(\"https://admfd.com\")"
+          },
+          {
+            "key": "Permissions-Policy",
+            "value": "ch-dpr=(\"https://admfd.com\")"
+          },
+          {
+            "key": "Permissions-Policy",
+            "value": "ch-device-memory=(\"https://admfd.com\")"
+          },
+          {
+            "key": "Permissions-Policy",
+            "value": "ch-downlink=(\"https://admfd.com\")"
+          },
+          {
+            "key": "Permissions-Policy",
+            "value": "ch-ect=(\"https://admfd.com\")"
+          },
+          {
+            "key": "Permissions-Policy",
+            "value": "ch-rtt=(\"https://admfd.com\")"
+          },
+          {
+            "key": "Permissions-Policy",
+            "value": "ch-save-data=(\"https://admfd.com\")"
           }
         ]
       }
