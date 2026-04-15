@@ -2,7 +2,7 @@
 body{min-height:100vh;}
 img{width:100%;cursor:pointer;}
 ul.wolahn{width:100%; height:100%; position:fixed; left:0px; top:0px; background:rgba(0,0,0,0.95); z-index:1000;}
-ul.wolahn{width: 5vh;height: 5vh;border: 4px solid #e3e3e3;border-top: 4px solid #3498db;border-radius: 50%;animation: liwehso 1s linear infinite;margin:auto; margin-top:47.5vh;list-style:none;}
+ul.wolahn li{width: 5vh;height: 5vh;border: 4px solid #e3e3e3;border-top: 4px solid #3498db;border-radius: 50%;animation: liwehso 1s linear infinite;margin:auto; margin-top:47.5vh;list-style:none;}
 @keyframes liwehso{0% { transform: rotate(0deg); }100% { transform: rotate(360deg); }}
 
 :root {
